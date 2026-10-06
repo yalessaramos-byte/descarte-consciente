@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Descarte Consciente</title>
+
+    <meta
+        name="description"
+        content="Projeto educativo para combater o descarte irregular de lixo."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="container nav-container">
+
+            <a href="#inicio" class="logo">
+                ♻️ <span>Descarte<span class="logo-green">Consciente</span></span>
+            </a>
+
+            <button class="menu-button" id="menuButton" aria-label="Abrir menu">
+                ☰
+            </button>
+
+            <nav class="nav" id="nav">
+                <a href="#inicio">Início</a>
+                <a href="#problema">O problema</a>
+                <a href="#denuncia">Denunciar</a>
+                <a href="#pontos">Pontos de descarte</a>
+                <a href="#quiz">Quiz</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <span class="tag">🌱 Cuidar da cidade é responsabilidade de todos</span>
+
+                    <h1>
+                        Uma cidade limpa
+                        <span>começa com você.</span>
+                    </h1>
+
+                    <p>
+                        Ajude a combater o descarte irregular de lixo,
+                        aprenda a separar seus resíduos e contribua para
+                        um ambiente mais saudável.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#denuncia" class="button button-primary">
+                            📸 Fazer uma denúncia
+                        </a>
+
+                        <a href="#problema" class="button button-secondary">
+                            Saiba mais
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="hero-card">
+
+                    <div class="earth-icon">
+                        🌎
+                    </div>
+
+                    <h3>Faça sua parte</h3>
+
+                    <p>
+                        Pequenas atitudes podem gerar grandes mudanças
+                        para o meio ambiente.
+                    </p>
+
+                    <div class="stats">
+
+                        <div>
+                            <strong id="denunciaCount">0</strong>
+                            <span>denúncias</span>
+                        </div>
+
+                        <div>
+                            <strong>100%</strong>
+                            <span>conscientização</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROBLEMA -->
+        <section class="section" id="problema">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <span class="tag">⚠️ Entenda o problema</span>
+
+                    <h2>
+                        Por que o descarte irregular é perigoso?
+                    </h2>
+
+                    <p>
+                        Jogar lixo em ruas, terrenos, rios ou outros locais
+                        inadequados pode causar diversos problemas para a
+                        sociedade e para o meio ambiente.
+                    </p>
+                </div>
+
+
+                <div class="cards">
+
+                    <article class="card">
+                        <div class="card-icon">🌊</div>
+
+                        <h3>Poluição da água</h3>
+
+                        <p>
+                            O lixo pode chegar aos rios e córregos,
+                            contaminando a água e prejudicando os animais.
+                        </p>
+                    </article>
+
+
+                    <article class="card">
+                        <div class="card-icon">🦟</div>
+
+                        <h3>Doenças</h3>
+
+                        <p>
+                            Lixo acumulado pode atrair insetos, ratos e
+                            outros animais transmissores de doenças.
+                        </p>
+                    </article>
+
+
+                    <article class="card">
+                        <div class="card-icon">🌧️</div>
+
+                        <h3>Enchentes</h3>
+
+                        <p>
+                            Resíduos jogados nas ruas podem entupir bueiros
+                            e dificultar o escoamento da água da chuva.
+                        </p>
+                    </article>
+
+
+                    <article class="card">
+                        <div class="card-icon">🌳</div>
+
+                        <h3>Danos ambientais</h3>
+
+                        <p>
+                            O descarte inadequado prejudica o solo, plantas,
+                            animais e todo o equilíbrio ambiental.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DENÚNCIA -->
+        <section class="section section-light" id="denuncia">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <span class="tag">📸 Participe</span>
+
+                    <h2>Denuncie um ponto de descarte irregular</h2>
+
+                    <p>
+                        Encontrou lixo sendo descartado em um local inadequado?
+                        Registre as informações abaixo.
+                    </p>
+                </div>
+
+
+                <div class="form-container">
+
+                    <form id="denunciaForm">
+
+                        <div class="form-group">
+
+                            <label for="nome">
+                                Seu nome
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nome"
+                                placeholder="Digite seu nome"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="local">
+                                Local do descarte
+                            </label>
+
+                            <input
+                                type="text"
+                                id="local"
+                                placeholder="Ex.: Rua das Flores, bairro Centro"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="tipoLixo">
+                                Tipo de lixo
+                            </label>
+
+                            <select id="tipoLixo" required>
+
+                                <option value="">
+                                    Selecione uma opção
+                                </option>
+
+                                <option value="Orgânico">
+                                    Lixo orgânico
+                                </option>
+
+                                <option value="Reciclável">
+                                    Material reciclável
+                                </option>
+
+                                <option value="Eletrônico">
+                                    Lixo eletrônico
+                                </option>
+
+                                <option value="Entulho">
+                                    Entulho
+                                </option>
+
+                                <option value="Móveis">
+                                    Móveis e objetos grandes
+                                </option>
+
+                                <option value="Outro">
+                                    Outro
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="descricao">
+                                Descrição
+                            </label>
+
+                            <textarea
+                                id="descricao"
+                                rows="5"
+                                placeholder="Descreva o que foi encontrado..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="foto">
+                                Foto do local
+                            </label>
+
+                            <input
+                                type="file"
+                                id="foto"
+                                accept="image/*"
+                            >
+
+                            <small>
+                                A foto é opcional nesta versão do projeto.
+                            </small>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="button button-primary button-full"
+                        >
+                            🚨 Registrar denúncia
+                        </button>
+
+                    </form>
+
+
+                    <div class="form-info">
+
+                        <div class="info-icon">
+                            💚
+                        </div>
+
+                        <h3>Por que denunciar?</h3>
+
+                        <p>
+                            Registrar pontos de descarte irregular ajuda a
+                            identificar problemas e aumenta a conscientização
+                            da população.
+                        </p>
+
+                        <div class="info-list">
+
+                            <div>
+                                <span>✓</span>
+                                Identifique o problema
+                            </div>
+
+                            <div>
+                                <span>✓</span>
+                                Ajude sua comunidade
+                            </div>
+
+                            <div>
+                                <span>✓</span>
+                                Incentive atitudes conscientes
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PONTOS DE DESCARTE -->
+        <section class="section" id="pontos">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <span class="tag">♻️ Descarte corretamente</span>
+
+                    <h2>
+                        Onde descartar cada tipo de material?
+                    </h2>
+
+                    <p>
+                        Cada tipo de resíduo possui uma forma adequada de
+                        descarte.
+                    </p>
+
+                </div>
+
+
+                <div class="disposal-grid">
+
+                    <article class="disposal-card">
+
+                        <div class="disposal-icon green">
+                            📦
+                        </div>
+
+                        <h3>Recicláveis</h3>
+
+                        <p>
+                            Papel, papelão, plástico, vidro e metais.
+                        </p>
+
+                        <span class="disposal-label">
+                            Coleta seletiva
+                        </span>
+
+                    </article>
+
+
+                    <article class="disposal-card">
+
+                        <div class="disposal-icon yellow">
+                            🔋
+                        </div>
+
+                        <h3>Pilhas e baterias</h3>
+
+                        <p>
+                            Devem ser levadas a pontos específicos de coleta.
+                        </p>
+
+                        <span class="disposal-label">
+                            Ponto de coleta
+                        </span>
+
+                    </article>
+
+
+                    <article class="disposal-card">
+
+                        <div class="disposal-icon blue">
+                            💻
+                        </div>
+
+                        <h3>Eletrônicos</h3>
+
+                        <p>
+                            Computadores, celulares, cabos e equipamentos.
+                        </p>
+
+                        <span class="disposal-label">
+                            Coleta eletrônica
+                        </span>
+
+                    </article>
+
+
+                    <article class="disposal-card">
+
+                        <div class="disposal-icon orange">
+                            🛢️
+                        </div>
+
+                        <h3>Óleo de cozinha</h3>
+
+                        <p>
+                            Nunca despeje óleo usado na pia ou no esgoto.
+                        </p>
+
+                        <span class="disposal-label">
+                            Coleta de óleo
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMO FAZER -->
+        <section class="section how-section">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <span class="tag">🌱 Faça a diferença</span>
+
+                    <h2>
+                        4 passos para descartar corretamente
+                    </h2>
+
+                </div>
+
+
+                <div class="steps">
+
+                    <div class="step">
+
+                        <div class="step-number">1</div>
+
+                        <h3>Separe</h3>
+
+                        <p>
+                            Separe os resíduos de acordo com seu tipo.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step">
+
+                        <div class="step-number">2</div>
+
+                        <h3>Armazene</h3>
+
+                        <p>
+                            Mantenha os materiais em local adequado.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step">
+
+                        <div class="step-number">3</div>
+
+                        <h3>Procure</h3>
+
+                        <p>
+                            Encontre um ponto de coleta apropriado.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step">
+
+                        <div class="step-number">4</div>
+
+                        <h3>Descarte</h3>
+
+                        <p>
+                            Entregue o material no local correto.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUIZ -->
+        <section class="section quiz-section" id="quiz">
+
+            <div class="container">
+
+                <div class="quiz-box">
+
+                    <div class="section-title">
+
+                        <span class="tag">🎯 Teste seus conhecimentos</span>
+
+                        <h2>
+                            Quiz do Descarte Consciente
+                        </h2>
+
+                        <p>
+                            Veja se você sabe como cuidar melhor do meio ambiente.
+                        </p>
+
+                    </div>
+
+
+                    <div id="quizContent">
+
+                        <h3 id="question">
+                            Onde devemos descartar uma pilha usada?
+                        </h3>
+
+
+                        <div class="answers">
+
+                            <button
+                                class="answer"
+                                data-correct="false"
+                            >
+                                🗑️ No lixo comum
+                            </button>
+
+                            <button
+                                class="answer"
+                                data-correct="true"
+                            >
+                                🔋 Em um ponto de coleta apropriado
+                            </button>
+
+                            <button
+                                class="answer"
+                                data-correct="false"
+                            >
+                                🌊 Em um rio
+                            </button>
+
+                            <button
+                                class="answer"
+                                data-correct="false"
+                            >
+                                🛣️ Na rua
+                            </button>
+
+                        </div>
+
+
+                        <div id="quizResult" class="quiz-result"></div>
+
+                        <button
+                            id="nextQuestion"
+                            class="button button-primary hidden"
+                        >
+                            Próxima pergunta →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CHAMADA FINAL -->
+        <section class="call-to-action">
+
+            <div class="container">
+
+                <div class="cta-content">
+
+                    <h2>
+                        O futuro da nossa cidade depende das nossas atitudes.
+                    </h2>
+
+                    <p>
+                        Comece hoje. Separe, recicle e descarte corretamente.
+                    </p>
+
+                    <a href="#denuncia" class="button button-white">
+                        Quero fazer a diferença 🌱
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <a href="#inicio" class="logo footer-logo">
+                    ♻️ Descarte<span>Consciente</span>
+                </a>
+
+                <p>
+                    Projeto escolar de conscientização ambiental.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#inicio">Início</a>
+                <a href="#problema">O problema</a>
+                <a href="#denuncia">Denunciar</a>
+                <a href="#quiz">Quiz</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+            © 2026 Descarte Consciente — Projeto escolar.
+        </div>
+
+    </footer>
+
+
+    <!-- MODAL DE SUCESSO -->
+    <div class="modal" id="successModal">
+
+        <div class="modal-content">
+
+            <button
+                class="modal-close"
+                id="closeModal"
+                aria-label="Fechar"
+            >
+                ×
+            </button>
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h2>Denúncia registrada!</h2>
+
+            <p>
+                Obrigado por contribuir para uma cidade mais limpa e
+                consciente.
+            </p>
+
+            <button
+                class="button button-primary"
+                id="modalButton"
+            >
+                Entendi
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
